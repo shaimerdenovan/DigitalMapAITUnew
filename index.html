@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Map AITU</title>
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/332b62fad6.js" crossorigin="anonymous"></script>
+  <!--Bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="icon" href="assets/favicon.png">
+  <!--Bootstrap scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <audio id="wh">
+    <source src="di.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+<input type="text">
+
+  <section id="title">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--  Nav BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" id="head">DIGITAL MAP AITU</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html" target="_blank">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="networks.html" target="_blank">Social Networks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="suggestions.html" target="_blank">Suggestions</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Title -->
+
+    <div class="background-image">
+    </div>
+    <div class="background-text">
+      <br>
+      <h1 style="color: white;">DIGITAL MAP AITU</h1>
+      <br>
+      <h5 style="font-size: 20px;
+    color: white;
+
+    font-family: Rockwell;"><em>This map was created for <strong>orientation</strong> at the university.<em></h5>
+      <br>
+      <i class="fas fa-map-marker-alt"></i>
+      <a href="#selectingfloor">
+      <button onclick="playAudio()" type="button" class="btn btn-primary btn-lg" id="wh">Select a floor</button>
+</a>
+      </button>
+    </div>
+
+
+    <center>
+      <div id="box" class="box" style="padding-top:45px;padding-bottom:45px;background-color:#5588A3;>
+      <ol style=" font-family: Rockwell; font-size: 35px;color:#1590b2;">
+        <h4 style="font-size:30px;color:white;">How to use this map?</h4>
+        <li style="color:white;">Select a floor you need.</li>
+        <li style="color:white;">Determine the block you need.</li>
+        <li style="color:white;">Find the right office on the map</li>
+        </style>
+        </ol>
+      </div>
+
+    </center>
+
+    <div class="background-image1">
+    </div>
+
+    <center>
+      <div id="selectingfloor" class="selectingfloor" style="padding-top:45px;padding-bottom:45px;background-color:#5588A3;font-size: 50px; font-family:Rockwell;color:white;">
+        <p>Select a floor</p>
+      </div>
+      <br>
+      <a href="#1floor">
+      <button name="1floor_button" type="1floor" style="font-size: 25px; background-color: blue;
+      color: white; border: 0.5px solid #020353;
+      box-shadow: 3px 3px 8px 0 #000;
+      border-radius: 100px;
+      background-color:#0d5b71;
+      color:white;
+      font-family: Rockwell;">
+        First Floor
+      </button>
+    </a>
+      <br>
+      <br>
+      <a href="#2floor">
+      <button name="2floor_button" type="2floor" style=" font-size: 25px;
+    background-color: blue;
+      color: white; border: 0.5px solid #020353;
+      box-shadow: 3px 3px 8px 0 #000;
+      border-radius: 100px;
+      background-color:#0d5b71;
+      color:white;
+      font-family: Rockwell;">
+        Second Floor
+      </button>
+      </a>
+      <br>
+      <br>
+      <a href="#3floor">
+      <button name="3floor_button" type="3floor" style=" font-size: 25px;
+     background-color: blue;
+      color: white;border: 0.5px solid #020353;
+      box-shadow: 3px 3px 8px 0 #000;
+      border-radius: 100px;
+      background-color:#0d5b71;
+      color:white;
+      font-family: Rockwell;">
+        Third Floor
+      </button>
+      </a>
+      <br>
+      <br>
+      <a href="#2office">
+      <button style="font-size: 25px;
+    background-color: blue;
+      color: white;border: 0.5px solid #020353;
+      box-shadow: 3px 3px 8px 0 #000;
+      border-radius: 100px;
+      background-color:#0d5b71;
+      color:white;
+      font-family: Rockwell;">
+        Offices you may need. 2 Floor.
+      </button>
+      </a>
+      <br>
+      <br>
+      <a href="#3office">
+      <button style=" font-size: 25px;
+    background-color: blue;
+      color: white;border: 0.5px solid #020353;
+      box-shadow: 3px 3px 8px 0 #000;
+      border-radius: 100px;
+      background-color:#0d5b71;
+      color:white;
+      font-family: Rockwell;">
+        Offices you may need. 3 Floor.
+      </button>
+      </a>
+    </center>
+    <br>
+    <center>
+      <img src="assets/11.png" alt="1floor" id="1floor" width="80" height="80">
+      <br>
+      <img src="assets/1floor.png" alt="1floor"  width="1000" height="800">
+    </center>
+    <center>
+      <img src="assets/22.png" alt="1floor" id="2floor" width="80" height="80">
+      <br>
+      <img src="assets/2floor.png" alt="2floor" width="1000" height="800">
+    </center>
+    <hr>
+    <center>
+
+      <div class="container" style">
+        <!-- Content here --> Offices you may need. 2 Floor.
+      </div>
+
+      <ul type="square" id="2office" style="color:#117cc8;font-family: Rockwell;">
+        <li>
+          C1.1.222P – Department of Social Sciences.
+          <br>
+          C1.1.231 – SMART-CITY.
+          <br>
+          C1.1.238K – Apple classroom.
+          <br>
+          C1.1.239K – 1C classroom.
+          <br>
+          C1.1.240K – Apple classroom.
+          <br>
+          C1.1.248 – Camera Room.
+          <br>
+          C1.1.250 – Room for Translators.
+          <br>
+          C1.1.263 – Director of Department of Social Sciences. Zhibek Tleshova. Candidate of Pedagogical Sciences.
+          <br>
+          C1.1.262 – Department of Academic Affairs.
+          <br>
+          C1.1.261 – Department of Social Sciences.
+          <br>
+          C1.1.264 – Director of Department of Academic Affairs. Gulzhan Soltan. Candidate of Technical Sciences.
+          <br>
+          C1.1.265 – Academic Department.
+          <br>
+          C1.1.266 - Department of Social Sciences.
+          <br>
+          C1.1.267 - Department of Social Sciences.
+          <br>
+          C1.1.268 – Department of Social Sciences.
+          <br>
+          C.1.269 – Department of Social Sciences.
+          <br>
+          C.1.1.270 – Head of the Student Department. Madina Mukaliyeva. Master of Economics.
+          <br>
+          C1.1.271 – Head Office of the Registrar. Aliya Koitanova. Candidate of Economics.
+          <br>
+          C1.1.272 – Career and employment center.
+          <br>
+          C1.1.273 – Office of the Registrar.
+          <br>
+        </li>
+        <li>C1.2.245 - Director of Department of Student Affairs. Arman Kenzhebekov. Master of Arts.
+          <br>
+          C1.2.246 - Vice-Rector for Student Affairs. Abay Kalykov. Candidate of Economic science.
+          <br>
+          C1.2.248L - Student Government “AITUSA”.
+          <br>
+          C1.2.254 - Archive of students’ personal files.
+          <br>
+          C1.2.255 - Department of Information Technology.
+          <br>
+        </li>
+        <li>C1.3.258P - College Director. Daniyar Smailov.
+          <br>
+          C1.3.259P - Deputy Director for Academic Affairs. Alina Zakaryanova.
+          <br>
+          C1.3.267P - eSports Club Bootcamp.
+        </li>
+      </ul>
+    </center>
+    <hr>
+    <center>
+      <img src="assets/33.png" alt="1floor" id="3floor" width="80" height="80">
+      <br>
+      <img src="assets/3floor.png" alt="3floor" width="1000" height="800">
+      <hr>
+      <div class="container" style">
+        <!-- Content here -->
+        <h6 id = "3office">Offices you may need. 3 Floor.</h6>
+      </div>
+      <ul style="color:#117cc8;font-family: Rockwell;">
+        <li>C1.1.320 – Dean’s Meeting room.
+          <br>
+          C1.1.321 – Director of Department of Computational and Data Science. Olzhas Turar. PhD in Computer Science.
+          <br>
+          C1.1.322 – Dean. Bolatzhan Kumalakov. Doctor of Philosophy. PhD in Computer Science.
+          <br>
+          C1.1.323 – Vice-Dean of socially educational work. Sadvakassov Adilkhan.
+          <br>
+          C1.1.325 - Department of Intelligent Systems and Cybersecurity.
+          <br>
+          C1.1.327 – Department of Intelligent Systems and Cybersecurity.
+          <br>
+          C1.1.329 – Department of Intelligent Systems and Cybersecurity.
+          <br>
+          C1.1.330 – Director of Department of Intelligent Systems and Cybersecurity. Kamilya Smagulova. Doctor of Philosophy in Science, Engineering and Technology.
+          <br>
+          C1.1.332 – Department of Computational and Data Science.
+          <br>
+          C1.1.333 – Department of International Cooperation.
+          <br>
+          C1.1.335 – Director Department of International Cooperation. Leila Salykova. Doctor of Philosophy, Candidate in Economics.
+          <br>
+          C1.1.336 - Department of Computational and Data Science.
+          <br>
+          C1.1.337 - Department of Computational and Data Science.
+          <br>
+          C1.1.338 – Laboratory of Robotics.
+          <br>
+          C1.1.341P – Research and Innovation Laboratory FabLab.
+          <br>
+          C1.1.342P - Research and Innovation Laboratory FabLab.
+          <br>
+          C1.1.343P – Laboratory “Industry 4.0”.
+        </li>
+      </ul>
+    </center>
+
+
+
+    <br>
+
+    <footer>
+      &quotEverything is clear, when AITUMap is here!&quot &copy Diana, Murad &amp Nazira
+    </footer>
+
+    <script src="index.js" charset="utf-8"></script>
+
+
+</body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .text {
+    clear: left;
+  }
+
+  .background-image {
+    background-image: url('assets/astanait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    filter: brightness(20%);
+    height: 100vh;
+  }
+
+  body,
+  html {
+    font-family: Rockwell;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background-image1 {
+    background-image: url('assets/aituu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(5x);
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border: 10px;
+    font-family: Bodoni MT;
+
+    .background-text p {
+      padding: 0 8%;
+      font-family: Rockwell;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 50px;
+      border: 2px solid #fff;
+      font-size: 18px;
+      text-decoration: none;
+      color: #fff;
+      margin-top: 15px;
+    }
+</style>
+
+</html>
